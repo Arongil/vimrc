@@ -51,7 +51,6 @@ set so=7
 set number relativenumber
 set nu rnu
 
-
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
 set langmenu=en
@@ -68,8 +67,6 @@ if has("win16") || has("win32")
 else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
-
-set guifont=Consolas:h10
 
 "Always show current position
 set ruler
@@ -115,6 +112,9 @@ set tm=500
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+
+" Stop Vim from breaking long lines (useful when writing prose)
+set textwidth=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
