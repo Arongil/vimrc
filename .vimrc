@@ -114,7 +114,7 @@ set tm=500
 set foldcolumn=1
 
 " Stop Vim from breaking long lines (useful when writing prose)
-set textwidth=0
+set formatoptions-=t
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
