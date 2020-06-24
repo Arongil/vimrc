@@ -246,6 +246,13 @@ if has("mac") || has("macunix")
   vmap <D-k> <M-k>
 endif
 
+" Easily copy entire document into system clipboard
+if has("mac") || has("macunix")
+    map <leader>yy m'gg"+yG`'
+else
+    map <leader>yy m'gg"*yG`'
+endif
+
 " Delete trailing white space on save, useful for some filetypes ;)
 fun! CleanExtraSpaces()
     let save_cursor = getpos(".")
