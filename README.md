@@ -11,3 +11,16 @@ Note: `brew install fd` will download a package called `fd` which is an improvem
 ## vim keybinds in terminal
 
 Add `bindkey -v` to `~/.zshrc` to enable vi keybinds in terminal commands. Use *esc* to enter normal mode.
+
+## VimPlug
+
+You'll want to install `VimPlug` to make color schemes like `gruvbox` work.
+
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+To source `~/.vimrc`, run `:so %` from inside the `~/.vimrc` file.
+
+To enable true color on `gruvbox` (rather than the 256 palette), add `source ~/.vim/plugged/gruvbox/gruvbox_256palette.sh` to `~/.zshrc`.
