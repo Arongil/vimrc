@@ -10,7 +10,7 @@ Note: `brew install fd` will download a package called `fd` which is an improvem
 
 ## vim keybinds in terminal
 
-Add `bindkey -v` to `~/.zshrc` to enable vi keybinds in terminal commands. Use *esc* to enter normal mode.
+Add `bindkey -v` to `~/.zshrc` to enable vi keybinds in terminal commands. Use *esc* to enter normal mode. Note: disables `reverse-i-search`. For similar functionality use `/` for reverse search and `n` to find the next match, as in standard Vim.
 
 ## VimPlug
 
